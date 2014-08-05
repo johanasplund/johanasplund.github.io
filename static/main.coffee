@@ -1,3 +1,6 @@
+yaml = require "js-yaml"
+fs = require "fs"
+
 $(document).ready(->
   $(".bigbtn").mouseenter(->
     $(this).fadeTo(190, 0.6)
@@ -15,3 +18,7 @@ $(document).ready(->
     b.css({"top": (y+w/2)/topFactor, "left": (x+h/2)/topFactor})
   )
 )
+
+dof = yaml.safeLoad(fs.readFileSync("colors.yaml", "utf-8"))
+console.log dof
+console.log "bajs"

@@ -1,0 +1,106 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+#wrapper {
+    padding: 5% 10% 0 15%;
+    margin: 0;
+}
+
+.bigbtn {
+    position: relative;
+    width: 12%; 
+    border-radius: 15%;
+    display: inline-flex;
+    justify-content: center;
+    font-size: 6.3vw;
+    margin: 3px;
+    padding: 5px;
+}
+a {text-decoration: none;}
+
+#outinputwrapper {
+    margin-left: auto;
+    margin-right: auto;
+    width: 70%;
+    height: 60%;
+}
+
+#output {
+    border: 1px solid black;
+    width: 90%;
+    height: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#status {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 5vw;
+}
+
+#outputUpper {
+    margin: 0;
+}
+
+#outputLower {
+    margin: 0;
+}
+
+.tape-default {
+    font-family: monospace;
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    font-size: 3em;
+    height: 40%;
+    width: 10%;
+}
+
+#input {
+    display: block;
+    margin-top: 5px;
+    width: 99.4%;
+    height: 30%;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#printed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border: 1px solid black;
+    font-style: italic;
+}
+
+
+#input:focus, #printed:focus {outline: none;}
+
+#inputwrapper {
+    width: 90%;
+    height: 30%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#inputwrapper button {
+    display: inline-block;
+    border: 1px solid black;
+    font-size: 1vw;
+}
+
+#inputwrapper button:focus {outline: none;}
+
+#inputwrapper button:active {
+    -webkit-box-shadow: inset 0 0 3px black;
+    -moz-box-shadow: inset 0 0 3px black;
+    box-shadow: inset 0 0 3px black;
+
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script type="text/javascript" src="static/paper-full.min.js"></script>
+    <link rel="stylesheet" href="static/main.css">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <script type="text/coffeescript" src="static/main.coffee"></script>
+    <script type="text/coffeescript" src="static/brainfuck.coffee"></script>
+
+    <script type="text/javascript" src="https://rawgit.com/jashkenas/coffee-script/master/extras/coffee-script.js"></script>
+    <style type="text/css">
+        body {background-color: {{ primary }};}
+        .bigbtn span, #printed {color: {{ darker }};}
+        #status div, #inputwrapper div, .tape-default {color: {{ darkest }};}
+        .bigbtn, #input, #printed, #output {background-color: {{ lighter }};}
+        #inputwrapper button, .tape-default:nth-child(5), ::selection {background-color: {{ lightest }};}
+
+    </style>
+    <title>>_</title>
+</head>
+<body>
+<div id="wrapper">
+    <div id="status"><div class="fa fa-pause"></div></div>
+    <div id="outinputwrapper">
+    <textarea id="printed" readonly>Output</textarea>
+    <div id="output">
+    <ol id ="outputUpper">
+        <li class="tape-default">0</li>
+        <li class="tape-default">0</li>
+        <li class="tape-default">0</li>
+        <li class="tape-default">0</li>
+        <li class="tape-default">0</li>
+        <li class="tape-default">0</li>
+        <li class="tape-default">0</li>
+        <li class="tape-default">0</li>
+        <li class="tape-default">0</li>
+    </ol>
+    <ol id="outputLower">
+        <li class="tape-default">-4</li>
+        <li class="tape-default">-3</li>
+        <li class="tape-default">-2</li>
+        <li class="tape-default">-1</li>
+        <li class="tape-default">0</li>
+        <li class="tape-default">1</li>
+        <li class="tape-default">2</li>
+        <li class="tape-default">3</li>
+        <li class="tape-default">4</li>
+    </ol>
+    </div>
+    <div id="inputwrapper">
+        <textarea id="input" autofocus></textarea>
+        <button id="reset"><div class="fa fa-fast-backward"></div></button>
+        <button id="backward"><div class="fa fa-backward"></div></button>
+        <button id="play"><div class="fa fa-play"></div></button>
+        <button id="pause"><div class="fa fa-pause"></div></button>
+        <button id="step-forward"><div class="fa fa-step-forward"></div></button>
+        <button id="forward"><div class="fa fa-forward"></div></button>
+        <button id="end"><div class="fa fa-fast-forward"></div></button>
+    </div>
+    </div>
+
+</div>
+</body>
+</html>

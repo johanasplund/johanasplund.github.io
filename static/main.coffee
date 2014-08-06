@@ -19,6 +19,9 @@ $(document).ready(->
   )
 )
 
-dof = yaml.safeLoad(fs.readFileSync("colors.yaml", "utf-8"))
-console.log dof
-console.log "bajs"
+try
+  dof = yaml.safeLoad(fs.readFileSync("static/colors.yaml", "utf-8"))
+  console.log dof
+catch e
+  console.log e
+

@@ -148,6 +148,7 @@ window.onload = ->
     for c in coords
       gun[c[0]][c[1]] = "#"
     f.field = gun
+    clearGrid()
     drawGrid(f.field)
     if $(this).hasClass("fa fa-play")
       $(this).removeClass("fa fa-play")

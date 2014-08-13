@@ -104,3 +104,20 @@ a {text-decoration: none;}
     box-shadow: inset 0 0 3px black;
 
 }
+
+#game {
+    display: block;
+    border: 1px solid black;
+    width: 698px;
+    height: 498px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#status div{
+    cursor: pointer;
+}
+
+::selection {
+    display: none;
+}

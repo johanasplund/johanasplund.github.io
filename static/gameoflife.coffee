@@ -63,7 +63,7 @@ for j in [0..49]
 f = new Field(fArr)
 
 paper.install(window)
-window.onload = ->
+$(document).ready(->
   createSelection = (X,Y) ->
     rects.push(new Path.Rectangle({
       topLeft: [X,Y]
@@ -148,7 +148,7 @@ window.onload = ->
     for c in coords
       gun[c[0]][c[1]] = "#"
     f.field = gun
-    clearGrid()
+    clearGrid() 
     drawGrid(f.field)
     if $(this).hasClass("fa fa-play")
       $(this).removeClass("fa fa-play")
@@ -166,6 +166,7 @@ window.onload = ->
       $(this).removeClass("fa fa-play")
       $(this).addClass("fa fa-pause")
   )
+)
 
 # Uncomment when testing
 # exports.Field = Field
